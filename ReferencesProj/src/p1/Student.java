@@ -1,0 +1,13 @@
+package p1;
+
+public class Student {
+	public String rollNo,name,branch;
+	Address ad=new Address();
+	public void getStudent() {
+		System.out.println("===Student Details===");
+		System.out.println("Student-rollNo:"+rollNo);
+		System.out.println("Student-name:"+name);
+		System.out.println("Student-branch:"+branch);
+	}
+
+}

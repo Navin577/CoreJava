@@ -1,0 +1,26 @@
+package p1;
+
+import java.util.Scanner;
+
+class BTest{
+	static int k;
+	static void m1() {
+		System.out.println("===Static Method===");
+		System.out.println("K -value:"+k);
+	}
+	{
+		System.out.println("===Static Block===");
+		System.out.println("K -value:"+k);
+	}
+}
+public class DemoMethod01 {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the value for k:");
+		BTest.k=s.nextInt();
+		BTest obj=new BTest();
+		obj.m1();
+	}
+
+}

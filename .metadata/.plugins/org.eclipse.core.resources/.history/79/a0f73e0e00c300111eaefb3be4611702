@@ -1,0 +1,32 @@
+package p1;
+
+import java.util.Scanner;
+
+public class DemoReference {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		Student stu=new Student();
+		System.out.println("Enter the Student-rollNo:");
+		String rollNo=s.nextLine();
+		System.out.println("Enter the Student-name:");
+		String name=s.nextLine();
+		System.out.println("Enter the Student-brnach");
+		String branch=s.nextLine();
+		System.out.println("Enter the Student-hNo");
+		String hNo=s.nextLine();
+		System.out.println("Enter the Student-sName");
+		String sName=s.nextLine();
+		System.out.println("Enter the Student-city");
+		String city=s.nextLine();
+		System.out.println("Enter the Student-state");
+		String state=s.nextLine();
+		System.out.println("Enter the Student-pincode");
+		int pincode=s.nextInt();
+		
+		stu.getStudent();
+        stu.ad.getAdress();
+		
+	}
+
+}

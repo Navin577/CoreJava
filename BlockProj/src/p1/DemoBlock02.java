@@ -1,0 +1,40 @@
+package p1;
+
+class Display{
+	 int a;
+	 static int b;
+	 {
+		 a++;
+		 b++;
+		 System.out.println("===Instance Block===");
+		 System.out.println("The value of a:"+a);
+		 System.out.println("The value of b:"+b);
+	 }
+	 Display(){
+		 a++;
+		 b++;
+		 System.out.println("===Constructor===");
+		 System.out.println("The value of a:"+a);
+		 System.out.println("The value of b:"+b);
+	 }
+	 void m1() {
+		 a++;
+		 b++;
+		 System.out.println("===Instance Method===");
+		 System.out.println("The value of a:"+a);
+		 System.out.println("The value of b:"+b);
+	 }
+}
+public class DemoBlock02 {
+
+	public static void main(String[] args) {
+		System.out.println("===Object-1===");
+		Display obj1=new Display();
+		obj1.m1();
+		System.out.println("===Object-2===");
+		Display obj2=new Display();
+		obj2.m1();
+
+	}
+
+}
